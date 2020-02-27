@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home Page</title>
+	
+</head>
+<body>
+	<div>
+			<h2>Welcome home, <%= user.uname%></h2> 		
+	</div>
+ 
+	<a href="/adminhome/viewCustomer">View Customer</a> |
+	<a href="/adminhome/addmedicine">Add medicine</a> |
+	<a href="/adminhome/viewMed">View Medicine</a> |
+	<a href="/home/searchMed">Search Medicine</a> |
+	
+	<a href="/logout">Logout</a><br>
+	Username:  <%= user.uname %> <br>
+	Id: <%= user.id %> <br>
+	Password: <%= user.password %> <br>
+	Type: <%= user.type %>
+</body>
+</html>
